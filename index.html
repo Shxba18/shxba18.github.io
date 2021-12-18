@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c1d4c8f89c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+    <title>Shxbadev.eu</title>
+</head>
+<body>
+
+    <!-- navbar section starts  -->
+
+<nav class="navbar">
+    <a href="index.html"> <i class="fas fa-home"></i> <span>home</span> </a>
+    <a href="about.html"> <i class="fas fa-user"></i> <span>about</span> </a>
+    <a href="status.html"> <i class="far fa-calendar-alt"></i> <span>Status</span> </a>
+</nav>
+
+<!-- navbar section ends -->
+
+<!-- home section starts  -->
+
+<section class="home">
+
+    <div class="image">
+        <img src="images/Portrait.png" alt="">
+    </div>
+
+    <div class="content">
+        <h3>Hi, I am Daniel</h3>
+        <span>Website Developer</span>
+        <p>Im creating website for money. If you need website for your company or for own use. Contact me on discord. (Shxba_#6952)</p>
+        <a href="about.html" class="btn"> about me <i class="fas fa-user"></i> </a>
+    </div>
+
+</section>
+
+        
+        <ul>
+
+        </ul>
+
+        <div id="Mode">
+            <div id="switch"></div>
+            <label id="inner-text">Dark</label>
+        </div>
+    </nav>
+
+ 
+
+    <script>
+        //const Mode_icon = document.getElementById('Mode');
+        const Switch_Mode = document.getElementById('switch');
+        const Inner_text = document.getElementById('inner-text');
+        Mode.onclick = function(){
+            document.body.classList.toggle('dark-mode');
+            Switch_Mode.classList.toggle('switch-active');
+            Inner_text.classList.toggle('Inner-text-active');
+            if(document.body.classList.contains('dark-mode')){
+                Inner_text.innerHTML = 'Light';
+            }
+            else{
+                Inner_text.innerHTML = 'Dark';
+            }
+        }
+
+    </script>
+    
+
+</body>
+
+</html>
