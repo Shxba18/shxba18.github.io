@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c1d4c8f89c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+   
+    <title>Shxbadev.eu</title>
+</head>
+<body>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="https://visage.surgeplay.com/head/71c457eb-2e60-4e19-b885-44133e0bd88e" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Visitor</span>
+                    <span class="profession">Rank: Viewer</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="home.html">
+                            <i class='fas fa-home icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="about.html">
+                            <i class='fas fa-user icon' ></i>
+                            <span class="text nav-text">About me</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="status.html">
+                            <i class='fas fa-exclamation-circle icon'></i>
+                            <span class="text nav-text">Changelog</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="index.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+    </nav>
+
+    <section class="home">
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+
+<section class="home">
+
+    <div class="image">
+        <img src="img/e71d3d1d-dfd1-41d0-9b7e-004db2b8c42f.png" alt="">
+    </div>
+
+    <div class="content">
+        <h3>Hi, I am Daniel</h3>
+        <span>Website Developer</span>
+        <p></p>
+        <a href="about.html" class="btn">More info of me<i class="fas fa-user"></i> </a>
+    </div>
+
+</section>
+    
+
+</body>
+
+</html>
