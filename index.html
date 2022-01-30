@@ -1,49 +1,35 @@
 <!DOCTYPE html>
-<html lang="cz">
+<html lang="cz-CZ">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c1d4c8f89c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-   
-    <title>Shxbadev.eu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShxbaDev | Auth</title>
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
+  <div class="wrapper">
+    <img src="https://visage.surgeplay.com/head/71c457eb-2e60-4e19-b885-44133e0bd88e" alt="AuthmeIcon" width="200" height="200" align="top">
+    <header>AuthMe</header>
+    <form action="home.html">
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" placeholder="Valid email">
+          <i class="icon fas fa-envelope"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Enter a valid email!</div>
+      </div>
+      <div class="field password">
+        <div class="input-area">
+          <input type="password" placeholder="Password">
+          <i class="icon fas fa-lock"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Enter a valid password!</div>
+        <input type="submit" value="Login">
 
-    <!-- navbar section starts  -->
-
-<nav class="navbar">
-    <a href="index.html"> <i class="fas fa-home"></i> <span>home</span> </a>
-    <a href="about.html"> <i class="fas fa-user"></i> <span>about</span> </a>
-    <a href="status.html"> <i class="far fa-calendar-alt"></i> <span>Status</span> </a>
-    <a href="discord.html"> <i class="fab fa-discord"></i> <span>Discord</span> </a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"> <i class="fas fa-lock"></i> <span>OnlyFans</span> </a>
-</nav>
-
-<!-- navbar section ends -->
-
-<!-- home section starts  -->
-
-<section class="home">
-
-    <div class="image">
-        <img src="images/portrait.png" alt="">
-    </div>
-
-    <div class="content">
-        <h3>Hi, I am Daniel</h3>
-        <span>Website Developer</span>
-        <p>Im creating website for money. If you need website for your company or for own use. Contact me on discord. (Shxbadev#1010)</p>
-        <a href="about.html" class="btn"> about me <i class="fas fa-user"></i> </a>
-    </div>
-
-</section>
-    
-
+    </form>
+  <script src="script.js"></script>
 </body>
-
 </html>
